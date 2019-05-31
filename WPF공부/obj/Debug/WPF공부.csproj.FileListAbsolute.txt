@@ -1,0 +1,16 @@
+c:\users\media\documents\visual studio 2015\Projects\WPF공부\WPF공부\bin\Debug\WPF공부.exe.config
+c:\users\media\documents\visual studio 2015\Projects\WPF공부\WPF공부\bin\Debug\WPF공부.exe
+c:\users\media\documents\visual studio 2015\Projects\WPF공부\WPF공부\bin\Debug\WPF공부.pdb
+c:\users\media\documents\visual studio 2015\Projects\WPF공부\WPF공부\obj\Debug\WPF공부.csprojResolveAssemblyReference.cache
+c:\users\media\documents\visual studio 2015\Projects\WPF공부\WPF공부\obj\Debug\MainWindow.g.cs
+c:\users\media\documents\visual studio 2015\Projects\WPF공부\WPF공부\obj\Debug\App.g.cs
+c:\users\media\documents\visual studio 2015\Projects\WPF공부\WPF공부\obj\Debug\WPF공부_MarkupCompile.cache
+c:\users\media\documents\visual studio 2015\Projects\WPF공부\WPF공부\obj\Debug\MainWindow.baml
+c:\users\media\documents\visual studio 2015\Projects\WPF공부\WPF공부\obj\Debug\WPF공부.g.resources
+c:\users\media\documents\visual studio 2015\Projects\WPF공부\WPF공부\obj\Debug\WPF공부.Properties.Resources.resources
+c:\users\media\documents\visual studio 2015\Projects\WPF공부\WPF공부\obj\Debug\WPF공부.csproj.GenerateResource.Cache
+c:\users\media\documents\visual studio 2015\Projects\WPF공부\WPF공부\obj\Debug\WPF공부.exe
+c:\users\media\documents\visual studio 2015\Projects\WPF공부\WPF공부\obj\Debug\WPF공부.pdb
+C:\Users\media\documents\visual studio 2015\Projects\WPF공부\WPF공부\obj\Debug\info.g.cs
+C:\Users\media\documents\visual studio 2015\Projects\WPF공부\WPF공부\obj\Debug\WPF공부_MarkupCompile.lref
+C:\Users\media\documents\visual studio 2015\Projects\WPF공부\WPF공부\obj\Debug\info.baml

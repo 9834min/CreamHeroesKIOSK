@@ -1,0 +1,195 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" WindowStyle="None" WindowState="Maximized"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="WpfTutorialSamples.DataBinding.ChangeNotificationSample"
+        Title="Live Info" Height="1920" Width="1080">
+    <Window.Resources>
+        <Storyboard x:Key="Background" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames BeginTime="0:0:3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" 
+                                           Storyboard.TargetName="dd">
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="1188">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseIn"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames  BeginTime="0:0:9" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="tt">
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-1221"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames  BeginTime="0:0:15" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="coco">
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="1191"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="0:0:21" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="momo">
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-1221"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="0:0:27" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="chuchu">
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="1194"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="0:0:33" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="lala">
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-1128"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="0:0:39" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="lulu">
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="1192"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames  BeginTime="0:0:45"  Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="dd1">
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="1152"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource Background}"/>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid Background="#FFE8C1C1" RenderTransformOrigin="0.5,0.5" Margin="0,0,-4.667,0.667">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform/>
+                <TranslateTransform X="-5"/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="177"/>
+            <RowDefinition Height="1412"/>
+            <RowDefinition Height="177*"/>
+            <RowDefinition Height="70*"/>
+        </Grid.RowDefinitions>
+        <Image x:Name="every" Grid.RowSpan="3" Source="C:\Users\media\Documents\Visual Studio 2015\Projects\WPF공부\WPF공부\bin\Debug\이미지\BackGround\전체샷.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="dd1" Grid.RowSpan="3" Source="C:\Users\media\Documents\Visual Studio 2015\Projects\WPF공부\WPF공부\bin\Debug\이미지\BackGround\디디1.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Margin="-1156,0,0,0" Width="1076.667">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="lulu" Grid.RowSpan="3" Source="C:\Users\media\Documents\Visual Studio 2015\Projects\WPF공부\WPF공부\bin\Debug\이미지\BackGround\루루.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="lala" Grid.RowSpan="3" Source="C:\Users\media\Documents\Visual Studio 2015\Projects\WPF공부\WPF공부\bin\Debug\이미지\BackGround\라라.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="chuchu" Grid.RowSpan="3" Source="C:\Users\media\Documents\Visual Studio 2015\Projects\WPF공부\WPF공부\bin\Debug\이미지\BackGround\츄츄.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="momo" Grid.RowSpan="3" Source="C:\Users\media\Documents\Visual Studio 2015\Projects\WPF공부\WPF공부\bin\Debug\이미지\BackGround\모모.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="coco" Grid.RowSpan="3" Source="C:\Users\media\Documents\Visual Studio 2015\Projects\WPF공부\WPF공부\bin\Debug\이미지\BackGround\코코.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="tt" Grid.RowSpan="3" Source="C:\Users\media\Documents\Visual Studio 2015\Projects\WPF공부\WPF공부\bin\Debug\이미지\BackGround\티티.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="dd" Grid.RowSpan="3" Source="C:\Users\media\Documents\Visual Studio 2015\Projects\WPF공부\WPF공부\bin\Debug\이미지\BackGround\디디.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Margin="0,-5,0,5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Grid Grid.Row="0" d:IsLocked="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0" Source="C:\Users\media\Documents\Visual Studio 2015\Projects\WPF공부\WPF공부\bin\Debug\이미지\Logo\Logo1.png" Stretch="UniformToFill" Height="Auto" Width="Auto" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="-11,0,0,0"/>
+            <TextBlock Grid.Column="1" FontSize="30" x:Name="Info" Foreground="White" FontFamily="Segoe print" Height="Auto" Width="Auto" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,2,40">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform><Run Text="Enjoy Every Sunday PM 9:00!"/></TextBlock>
+
+        </Grid>
+
+        <Grid Grid.Row="2"  Background="White" Opacity="0.8" OpacityMask="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="67*"/>
+                <RowDefinition Height="24*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="infobutton" Opacity="0" Grid.Row="0" Grid.Column="2" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Margin="0,0,0,0" Width="200" Cursor="Arrow" ClickMode="Hover" Background="#FFDDDDDD"/>
+
+            <Image x:Name="youtubeicon" Opacity="1" Source="C:\Users\media\Documents\Visual Studio 2015\Projects\WPF공부\WPF공부\bin\Debug\이미지\Icon\youtubeicon.png" Grid.Row="0"/>
+            <Label Opacity="1" Width="Auto" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="Auto" FontFamily="Segoe print" FontSize="20" Margin="0,5.764,0,0" Grid.Row="1">Youtube</Label>
+            <Image Opacity="1" x:Name="homepageicon" Source="C:\Users\media\Documents\Visual Studio 2015\Projects\WPF공부\WPF공부\bin\Debug\이미지\Logo\Logo1.png" Grid.Column="1" Grid.Row="0"/>
+            <Label Opacity="1" FontFamily="Segoe print" FontSize="20" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1" Width="Auto" Height="Auto" VerticalAlignment="Center">HomePage</Label>
+            <Image Opacity="1" x:Name="abouticon" Source="C:\Users\media\Documents\Visual Studio 2015\Projects\WPF공부\WPF공부\bin\Debug\이미지\Icon\icon3.png" Grid.Column="2"/>
+            <Label Opacity="1" FontFamily="Segoe print" FontSize="20" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="Auto" Height="Auto" d:LayoutOverrides="TopMargin, BottomMargin">About Us</Label>
+            <Image Opacity="1" x:Name="instagramicon" Grid.Column="4" Source="C:\Users\media\Documents\Visual Studio 2015\Projects\WPF공부\WPF공부\bin\Debug\이미지\Icon\icon2.png"/>
+            <Label Opacity="1" FontFamily="Segoe print" FontSize="20" Grid.Column="3" Grid.Row="1" Height="Auto" Width="Auto" VerticalAlignment="Center" HorizontalAlignment="Center" d:LayoutOverrides="TopMargin, BottomMargin">Instagram</Label>
+        </Grid>
+        <Grid Grid.Row="3" Margin="0,-5,-36,5" d:IsLocked="True">
+            <Image Grid.Column="1"  Source="C:\Users\media\Documents\Visual Studio 2015\Projects\WPF공부\WPF공부\bin\Debug\이미지\Icon\people.png" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label FontSize="40" Content="中 あ A 가" Foreground="#FFBB3E3E" HorizontalAlignment="Right" VerticalAlignment="Center" FontFamily="MV Boli" Margin="0,0,31.333,-0.002" Width="213.53"/>
+        </Grid>
+    </Grid>
+</Window>
